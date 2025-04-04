@@ -4,45 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Demo Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .category {
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        .description {
+            background-color: #f8f8f8;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #4285f4;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to My Demo Page</h1>
-    <p>Here are the available demos:</p>
-    <ul>
-        <!-- 144p系列 -->
-        <li><a href="demo/144p-0ms/index.html">144p-0ms</a></li>
-        <li><a href="demo/144p-50ms/index.html">144p-50ms</a></li>
-        <li><a href="demo/144p-100ms/index.html">144p-100ms</a></li>
-        <li><a href="demo/144p-250ms/index.html">144p-250ms</a></li>
-        <li><a href="demo/144p-500ms/index.html">144p-500ms</a></li>
-        
-        <!-- 240p系列 -->
-        <li><a href="demo/240p-0ms/index.html">240p-0ms</a></li>
-        <li><a href="demo/240p-50ms/index.html">240p-50ms</a></li>
-        <li><a href="demo/240p-100ms/index.html">240p-100ms</a></li>
-        <li><a href="demo/240p-250ms/index.html">240p-250ms</a></li>
-        <li><a href="demo/240p-500ms/index.html">240p-500ms</a></li>
-        
-        <!-- 360p系列 -->
-        <li><a href="demo/360p-0ms/index.html">360p-0ms</a></li>
-        <li><a href="demo/360p-50ms/index.html">360p-50ms</a></li>
-        <li><a href="demo/360p-100ms/index.html">360p-100ms</a></li>
-        <li><a href="demo/360p-250ms/index.html">360p-250ms</a></li>
-        <li><a href="demo/360p-500ms/index.html">360p-500ms</a></li>
-        
-        <!-- 480p系列 -->
-        <li><a href="demo/480p-0ms/index.html">480p-0ms</a></li>
-        <li><a href="demo/480p-50ms/index.html">480p-50ms</a></li>
-        <li><a href="demo/480p-100ms/index.html">480p-100ms</a></li>
-        <li><a href="demo/480p-250ms/index.html">480p-250ms</a></li>
-        <li><a href="demo/480p-500ms/index.html">480p-500ms</a></li>
-        
-        <!-- 720p系列 -->
-        <li><a href="demo/720p-0ms/index.html">720p-0ms</a></li>
-        <li><a href="demo/720p-50ms/index.html">720p-50ms</a></li>
-        <li><a href="demo/720p-100ms/index.html">720p-100ms</a></li>
-        <li><a href="demo/720p-250ms/index.html">720p-250ms</a></li>
-        <li><a href="demo/720p-500ms/index.html">720p-500ms</a></li>
-    </ul>
+    <!-- <p>Here are the available demos:</p> -->
+    
+    <div class="description">
+        <p>Below you will find two different games available for testing: <strong>LEGO Microgame</strong> and <strong>Take a Photo</strong>.<br>
+        Each game is available in three different settings.</p>
+    </div>
+    
+    <div class="category">
+        <h2>LEGO Microgame</h2>
+        <ul>
+            <li><a href="demo/LEGO/normal/index.html">Normal</a></li>
+            <li><a href="demo/LEGO/low-quality/index.html">Low Quality</a></li>
+            <li><a href="demo/LEGO/high-latency/index.html">High Latency</a></li>
+        </ul>
+    </div>
+    
+    <div class="category">
+        <h2>Take a Photo</h2>
+        <ul>
+            <li><a href="demo/Photo/normal/index.html">Normal</a></li>
+            <li><a href="demo/Photo/low-quality/index.html">Low Quality</a></li>
+            <li><a href="demo/Photo/high-latency/index.html">High Latency</a></li>
+        </ul>
+    </div>
 </body>
 </html>
